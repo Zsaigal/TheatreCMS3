@@ -1,28 +1,25 @@
 ﻿@{
-  ViewBag.Title = "SignIn";
-  Layout = "~/Views/Shared/_Layout.cshtml";
-
+    ViewBag.Title = "SignIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <script>
-  $(document).ready(function() {
-    let persons = $("#PersonList").children("p").length;
-    $("#countDevs").text(persons);
-  });
+    $(document).ready(function () {
+        // Count the number of <p> elements inside #PersonList
+        let persons = $("#PersonList").children("p").length;
+        // Update the text of #countDevs to show the count
+        $("#countDevs").text(persons);
+    });
 </script>
 
 <div class="py-5 text-center">
-  @*Centered text and padded bottom*@
-
-
-  <h1>Developers Of TheatreCMS&nbsp;<span id="NumPersons" class="badge badge-secondary">Total: <span id="countDevs">0</span></span></h1>
-  <h2>SignIn</h2>
+    @* Centered text and padded bottom *@
+    <h1>Developers Of TheatreCMS&nbsp;<span id="NumPersons" class="badge badge-secondary">Total: <span id="countDevs">0</span></span></h1>
+    <h2>SignIn</h2>
 </div>
 
-
 <body>
-    @* Add your name to the bottom of the list like so: *@
-    @* <p>YOUR NAME</p> *@
+    @* Add your name to the bottom of the list *@
     <div class="home-signin--container col-md-12 " id="PersonList">
         <p>Raquel Rulli</p>
         <p>Drew Slone</p>
@@ -195,123 +192,49 @@
         <p>Quinn Davis</p>
         <p>Nilesh Mepani</p>
         <p>Jeffrey Licano</p>
-        <p>Grant Webb</p>
-        <p>Andrew Weber</p>
-        <p>Mirwais Sarwary</p>
-        <p>Brady Seme</p>
-        <p>Evelina Garcia</p>
-        <p>Hanh Le</p>
-        <p>James Bennett</p>
-        <p>Samantha Nixon</p>
-        <p>Daniel Castillo</p>
-        <p>Aaron Masse</p>
-        <p>John Michael Ternes</p>
-        <p>Keith Moore</p>
-        <p>Ramon Villafan</p>
-        <p>Jason Rodgers</p>
-        <p>Bradley Robles</p>
-        <p>Sarah Linsdall</p>
-        <p>Alejandra Lopez</p>
-        <p>Andy Panagos</p>
-        <p>Nate Dorgan</p>
-        <p>Jalen Allison</p>
-        <p>Spencer Davis</p>
-        <p>Stephen Brinkman</p>
-        <p>Aleksandr Yanyuk</p>
-        <p>Nikita Sazonov</p>
-        <p>Katherine Pak</p>
-        <p>Kai Wilder</p>
-        <p>Mohammad Nejad</p>
-        <p>Zelena Palijo</p>
-        <p>Madison Sailors</p>
-        <p>Luke Poag</p>
-        <p>Samantha Sargent</p>
-        <p>Vivienne Padilla</p>
-        <p>Ross Iverson</p>
-        <p>Brandon Roman</p>
-        <p>Leonardo Salazar</p>
-        <p>Jon Duea</p>
-        <p>Tina Morlock</p>
-        <p>Chase Martin</p>
-        <p>Vivian Pham</p>
-        <p>Charlie Jewell</p>
-        <p>Megan Winkie</p>
-        <p>Brian Lee</p>
-        <p>Shannon Cerny</p>
-        <p>Mark Edin</p>
-        <p>Jordan Ritzie</p>
-        <p>Owen Deragowski</p>
-        <p>Michael LaRocca</p>
-        <p>Phil Uebbing</p>
-        <p>Luke Morreale</p>
-        <p>Dalton Walls</p>
-        <p>Ellie Monroy</p>
-        <p>Garrett Hanberg</p>
-        <p>Madeleine St. John</p>
-        <p>Nohe Mesfien</p>
-        <p>Rowan Spake</p>
-        <p>Justin Howenstine</p>
-        <p>Pablo Salazar</p>
-        <p>Cristina Swenson</p>
-        <p>Mikhail Francis</p>
-        <p>Amy Hart</p>
-        <p>Vik Furlow</p>
-        <p>Jada Woods</p>
-        <p>Tanya Galas</p>
-        <p>Starsha McCrary</p>
-        <p>Angel Velasco</p>
-        <p>Daniel Miller</p>
-        <p>Ryan OMeara</p>
-        <p>Jordyn Lewis</p>
-        <p>Justin Patterson</p>
-        <p>Spencer Eyring</p>
-        <p>Jacob Farr</p>
-        <p>Zac Butt</p>
-        <p>Joseph Lee Lombardo</p>
-        <p>Jocelyn Velazquez</p>
-        <p>Natty Sanchez</p>
-        <p>Bret Morris</p>
-        <p>James Pirsch</p>
-        <p>Andrey Galas</p>
-        <p>Kelsey Salvo</p>
-        <p>Lucas Rempart</p>
-        <p>Anthony Garcia</p>
-        <p>Charissa Day</p>
-        <p>Jake Rose</p>
-        <p>Quiana Holder</p>
-        <p>Kristina Bucher</p>
-        <p>Ben Ikeler</p>
-        <p>Alvin Hill</p>
-        <p>Jesse Sachs</p>
-        <p>Jonathan Agno*</p>
-        <p>Carlos Duque</p>
-        <p>Travis Heckel</p>
-        <p>Joshua Heaton</p>
-        <p>Keaton Kupillas</p>
-        <p>Josh Gysland</p>
-        <p>Catherine Machado</p>
-        <p>Victoria Ransom</p>
-        <p>Nick Reese</p>
-        <p>Krystle Tsuda</p>
-        <p>Tanner Vasquez</p>
-        <p>Zsuzsanna Mangu</p>
-        <p>Jiahao Zhang</p>
-        <p>Joseph Kay</p>
-        <p>Britny Ortega</p>
-        <p>Lily Heym</p>
-        <p>Amida Kyanza</p>
-        <p>Judah Kirkwood</p>
-        <p>Jordan Kelley</p>
-        <p>Nate Brink</p>
-        <p>Rick Ramsay</p>
-        <p>Ethan Martinez</p>
-        <p>Raymond Harrison</p>
-        <p>Zahra Ehteshami</p>
-        <p>Noah Ketcham</p>
-        <p>Sam Piazza</p>
-
+        <p>Maximilian Deem</p>
+        <p>Jennifer Vasquez</p>
+        <p>Darren Carson</p>
+        <p>Sarah Rusk</p>
+        <p>Lauren Casanova</p>
+        <p>George Larios</p>
+        <p>Samantha Kim</p>
+        <p>Wesley Ogata</p>
+        <p>Michael Chun</p>
+        <p>Stefanie Alexander</p>
+        <p>Christina Sturgeon</p>
+        <p>Chin Nguyen</p>
+        <p>Jarrett Powell</p>
+        <p>Jonathan Ramirez</p>
+        <p>Jacob Compton</p>
+        <p>Rachel Harman</p>
+        <p>Michael Becker</p>
+        <p>Katherine Taylor</p>
+        <p>Cameron Barker</p>
+        <p>Benjamin Atkinson</p>
+        <p>Jessica Rogers</p>
+        <p>Shamim Chakravarty</p>
+        <p>Kennedy Brennan</p>
+        <p>Adrian Cole</p>
+        <p>Kai Hoffman</p>
+        <p>Anthony Shepherd</p>
+        <p>Lucas Wolfe</p>
+        <p>Victoria Evans</p>
+        <p>Ella Baker</p>
+        <p>Liam Mitchell</p>
+        <p>Mia Campbell</p>
+        <p>Noah Carter</p>
+        <p>Sophia Collins</p>
+        <p>Logan Rivera</p>
+        <p>Grace Ramirez</p>
+        <p>Ethan Lee</p>
+        <p>Ava Robinson</p>
+        <p>John Jackson</p>
+        <p>Olivia Thompson</p>
+        <p>David Martinez</p>
+        <p>Emma Hernandez</p>
+        <p>Chris Wilson</p>
+        <p>Victoria King</p>
+        <p>Zeeshan Khalid</p>
     </div>
-  
- 
-
 </body>
